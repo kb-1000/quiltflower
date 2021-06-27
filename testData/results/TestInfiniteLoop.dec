@@ -3,18 +3,78 @@ package pkg;
 public class TestInfiniteLoop {
    public void test() {
       // $FF: Couldn't be decompiled
+
+      // org.jetbrains.java.decompiler.modules.decompiler.stats.RootStatement.<init>(RootStatement.java:18)
+      // org.jetbrains.java.decompiler.modules.decompiler.DomHelper.graphToStatement(DomHelper.java:44)
+      // org.jetbrains.java.decompiler.modules.decompiler.DomHelper.parseGraph(DomHelper.java:196)
+      // org.jetbrains.java.decompiler.main.rels.MethodProcessorRunnable.codeToJava(MethodProcessorRunnable.java:123)
+      // org.jetbrains.java.decompiler.main.rels.ClassWrapper.init(ClassWrapper.java:62)
+      // org.jetbrains.java.decompiler.main.ClassesProcessor.initWrappers(ClassesProcessor.java:456)
+      // org.jetbrains.java.decompiler.main.ClassesProcessor.writeClass(ClassesProcessor.java:401)
+      // org.jetbrains.java.decompiler.main.Fernflower.getClassContent(Fernflower.java:146)
+      // org.jetbrains.java.decompiler.struct.ContextUnit.save(ContextUnit.java:128)
+      // org.jetbrains.java.decompiler.struct.StructContext.saveContext(StructContext.java:68)
+      // org.jetbrains.java.decompiler.main.Fernflower.decompileContext(Fernflower.java:115)
+      // org.jetbrains.java.decompiler.main.decompiler.ConsoleDecompiler.decompileContext(ConsoleDecompiler.java:168)
+      // org.jetbrains.java.decompiler.SingleClassesTestBase.doTest(SingleClassesTestBase.java:77)
+      // org.jetbrains.java.decompiler.SingleClassesTest.testInfiniteLoop(SingleClassesTest.java:172)
    }
 
    public int testRet() {
       // $FF: Couldn't be decompiled
+
+      // org.jetbrains.java.decompiler.modules.decompiler.stats.RootStatement.<init>(RootStatement.java:18)
+      // org.jetbrains.java.decompiler.modules.decompiler.DomHelper.graphToStatement(DomHelper.java:44)
+      // org.jetbrains.java.decompiler.modules.decompiler.DomHelper.parseGraph(DomHelper.java:196)
+      // org.jetbrains.java.decompiler.main.rels.MethodProcessorRunnable.codeToJava(MethodProcessorRunnable.java:123)
+      // org.jetbrains.java.decompiler.main.rels.ClassWrapper.init(ClassWrapper.java:62)
+      // org.jetbrains.java.decompiler.main.ClassesProcessor.initWrappers(ClassesProcessor.java:456)
+      // org.jetbrains.java.decompiler.main.ClassesProcessor.writeClass(ClassesProcessor.java:401)
+      // org.jetbrains.java.decompiler.main.Fernflower.getClassContent(Fernflower.java:146)
+      // org.jetbrains.java.decompiler.struct.ContextUnit.save(ContextUnit.java:128)
+      // org.jetbrains.java.decompiler.struct.StructContext.saveContext(StructContext.java:68)
+      // org.jetbrains.java.decompiler.main.Fernflower.decompileContext(Fernflower.java:115)
+      // org.jetbrains.java.decompiler.main.decompiler.ConsoleDecompiler.decompileContext(ConsoleDecompiler.java:168)
+      // org.jetbrains.java.decompiler.SingleClassesTestBase.doTest(SingleClassesTestBase.java:77)
+      // org.jetbrains.java.decompiler.SingleClassesTest.testInfiniteLoop(SingleClassesTest.java:172)
    }
 
    public int test2() {
       // $FF: Couldn't be decompiled
+
+      // org.jetbrains.java.decompiler.modules.decompiler.stats.RootStatement.<init>(RootStatement.java:18)
+      // org.jetbrains.java.decompiler.modules.decompiler.DomHelper.graphToStatement(DomHelper.java:44)
+      // org.jetbrains.java.decompiler.modules.decompiler.DomHelper.parseGraph(DomHelper.java:196)
+      // org.jetbrains.java.decompiler.main.rels.MethodProcessorRunnable.codeToJava(MethodProcessorRunnable.java:123)
+      // org.jetbrains.java.decompiler.main.rels.ClassWrapper.init(ClassWrapper.java:62)
+      // org.jetbrains.java.decompiler.main.ClassesProcessor.initWrappers(ClassesProcessor.java:456)
+      // org.jetbrains.java.decompiler.main.ClassesProcessor.writeClass(ClassesProcessor.java:401)
+      // org.jetbrains.java.decompiler.main.Fernflower.getClassContent(Fernflower.java:146)
+      // org.jetbrains.java.decompiler.struct.ContextUnit.save(ContextUnit.java:128)
+      // org.jetbrains.java.decompiler.struct.StructContext.saveContext(StructContext.java:68)
+      // org.jetbrains.java.decompiler.main.Fernflower.decompileContext(Fernflower.java:115)
+      // org.jetbrains.java.decompiler.main.decompiler.ConsoleDecompiler.decompileContext(ConsoleDecompiler.java:168)
+      // org.jetbrains.java.decompiler.SingleClassesTestBase.doTest(SingleClassesTestBase.java:77)
+      // org.jetbrains.java.decompiler.SingleClassesTest.testInfiniteLoop(SingleClassesTest.java:172)
    }
 
    public int test3() {
       // $FF: Couldn't be decompiled
+
+      // org.jetbrains.java.decompiler.modules.decompiler.stats.RootStatement.<init>(RootStatement.java:18)
+      // org.jetbrains.java.decompiler.modules.decompiler.DomHelper.graphToStatement(DomHelper.java:44)
+      // org.jetbrains.java.decompiler.modules.decompiler.DomHelper.parseGraph(DomHelper.java:196)
+      // org.jetbrains.java.decompiler.main.rels.MethodProcessorRunnable.codeToJava(MethodProcessorRunnable.java:123)
+      // org.jetbrains.java.decompiler.main.rels.ClassWrapper.init(ClassWrapper.java:62)
+      // org.jetbrains.java.decompiler.main.ClassesProcessor.initWrappers(ClassesProcessor.java:456)
+      // org.jetbrains.java.decompiler.main.ClassesProcessor.writeClass(ClassesProcessor.java:401)
+      // org.jetbrains.java.decompiler.main.Fernflower.getClassContent(Fernflower.java:146)
+      // org.jetbrains.java.decompiler.struct.ContextUnit.save(ContextUnit.java:128)
+      // org.jetbrains.java.decompiler.struct.StructContext.saveContext(StructContext.java:68)
+      // org.jetbrains.java.decompiler.main.Fernflower.decompileContext(Fernflower.java:115)
+      // org.jetbrains.java.decompiler.main.decompiler.ConsoleDecompiler.decompileContext(ConsoleDecompiler.java:168)
+      // org.jetbrains.java.decompiler.SingleClassesTestBase.doTest(SingleClassesTestBase.java:77)
+      // org.jetbrains.java.decompiler.SingleClassesTest.testInfiniteLoop(SingleClassesTest.java:172)
    }
 
    public int testIf(int var1) {
@@ -27,17 +87,17 @@ public class TestInfiniteLoop {
 
 class 'pkg/TestInfiniteLoop' {
    method 'testIf (I)I' {
-      0      20
-      1      20
-      2      20
-      5      23
-      6      23
+      0      80
+      1      80
+      2      80
+      5      83
+      6      83
    }
 }
 
 Lines mapping:
-36 <-> 21
-37 <-> 24
+36 <-> 81
+37 <-> 84
 Not mapped:
 5
 11

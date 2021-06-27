@@ -54,6 +54,7 @@ public class ClassWrapper {
       RootStatement root = null;
 
       boolean isError = false;
+      Throwable err = null;
 
       try {
         if (mt.containsCode()) {
@@ -125,10 +126,12 @@ public class ClassWrapper {
         String message = "Method " + mt.getName() + " " + mt.getDescriptor() + " couldn't be decompiled.";
         DecompilerContext.getLogger().writeMessage(message, IFernflowerLogger.Severity.WARN, t);
         isError = true;
+        err = t;
       }
 
       MethodWrapper methodWrapper = new MethodWrapper(root, varProc, mt, counter);
       methodWrapper.decompiledWithErrors = isError;
+      methodWrapper.error = err;
 
       methods.addWithKey(methodWrapper, InterpreterUtil.makeUniqueKey(mt.getName(), mt.getDescriptor()));
 

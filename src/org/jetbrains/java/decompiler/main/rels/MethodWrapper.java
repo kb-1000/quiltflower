@@ -23,6 +23,7 @@ public class MethodWrapper {
   public DirectGraph graph;
   public List<VarVersionPair> synthParameters;
   public boolean decompiledWithErrors;
+  public Throwable error;
 
   public MethodWrapper(RootStatement root, VarProcessor varproc, StructMethod methodStruct, CounterContainer counter) {
     this.root = root;

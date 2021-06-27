@@ -750,6 +750,7 @@ public class ClassWriter {
             String message = "Method " + mt.getName() + " " + mt.getDescriptor() + " couldn't be written.";
             DecompilerContext.getLogger().writeMessage(message, IFernflowerLogger.Severity.WARN, t);
             methodWrapper.decompiledWithErrors = true;
+            methodWrapper.error = t;
           }
         }
       }
@@ -758,6 +759,36 @@ public class ClassWriter {
         buffer.appendIndent(indent);
         buffer.append("// $FF: Couldn't be decompiled");
         buffer.appendLineSeparator();
+
+        if (methodWrapper.error != null) {
+          buffer.appendLineSeparator();
+          tracer.incrementCurrentSourceLine();
+
+          List<String> stackBuffer = new ArrayList<>();
+          for (StackTraceElement stackTraceElement : methodWrapper.error.getStackTrace()) {
+            // Break out of internal calls
+            if (!stackTraceElement.getClassName().startsWith("org.jetbrains.java.decompiler")) {
+              stackBuffer.add(stackTraceElement.toString());
+              continue;
+            }
+
+            if (stackBuffer.size() > 0) {
+              for (String s : stackBuffer) {
+                buffer.appendIndent(indent);
+                buffer.append("// " + s);
+                buffer.appendLineSeparator();
+                tracer.incrementCurrentSourceLine();
+              }
+
+              stackBuffer.clear();
+            }
+
+            buffer.appendIndent(indent);
+            buffer.append("// " + stackTraceElement.toString());
+            buffer.appendLineSeparator();
+            tracer.incrementCurrentSourceLine();
+          }
+        }
       }
 
       if (root != null) {
@@ -1047,6 +1078,7 @@ public class ClassWriter {
             String message = "Method " + mt.getName() + " " + mt.getDescriptor() + " couldn't be written.";
             DecompilerContext.getLogger().writeMessage(message, IFernflowerLogger.Severity.WARN, t);
             methodWrapper.decompiledWithErrors = true;
+            methodWrapper.error = t;
           }
         }
 
@@ -1055,6 +1087,36 @@ public class ClassWriter {
           buffer.append("// $FF: Couldn't be decompiled");
           buffer.appendLineSeparator();
           tracer.incrementCurrentSourceLine();
+
+          if (methodWrapper.error != null) {
+            buffer.appendLineSeparator();
+            tracer.incrementCurrentSourceLine();
+
+            List<String> stackBuffer = new ArrayList<>();
+            for (StackTraceElement stackTraceElement : methodWrapper.error.getStackTrace()) {
+              // Break out of internal calls
+              if (!stackTraceElement.getClassName().startsWith("org.jetbrains.java.decompiler")) {
+                stackBuffer.add(stackTraceElement.toString());
+                continue;
+              }
+
+              if (stackBuffer.size() > 0) {
+                for (String s : stackBuffer) {
+                  buffer.appendIndent(indent + 1);
+                  buffer.append("// " + s);
+                  buffer.appendLineSeparator();
+                  tracer.incrementCurrentSourceLine();
+                }
+
+                stackBuffer.clear();
+              }
+
+              buffer.appendIndent(indent + 1);
+              buffer.append("// " + stackTraceElement.toString());
+              buffer.appendLineSeparator();
+              tracer.incrementCurrentSourceLine();
+            }
+          }
         }
         else if (root != null) {
           tracer.addMapping(root.getDummyExit().bytecode);
